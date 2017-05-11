@@ -41,22 +41,22 @@ async function keyPressed(){
     if (keyCode == LEFT_ARROW){
         if (snake.xspeed != 1){        
             snake.dir(-1, 0);
-            await sleep(30);
+            await sleep(100);
         }
     } else if (keyCode == RIGHT_ARROW){
         if (snake.xspeed != -1){
             snake.dir(1, 0);
-            await sleep(30);
+            await sleep(100);
         }
     } else if (keyCode == UP_ARROW){
         if (snake.yspeed != 1){
             snake.dir(0, -1);
-            await sleep(30);
+            await sleep(100);
         }
     } else if (keyCode == DOWN_ARROW){
         if (snake.yspeed != -1){
             snake.dir(0, 1);
-            await sleep();
+            await sleep(100);
         }
     }
 }
