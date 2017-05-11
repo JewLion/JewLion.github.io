@@ -8,7 +8,7 @@ function Snake(){
     this.rip = false;
     this.score = 0;
 
-    fill(255);
+    fill(0, 191, 63);
     
     rect(0, 0, scl, scl);
 
@@ -45,9 +45,9 @@ function Snake(){
     }
 
     this.show = function(){
-        fill(255);
+        fill(0, 191, 63);
         for (var i = 0; i < this.total; i++){
-            fill(255);
+            fill(0, 191, 63);
             rect(this.tail[i].x, this.tail[i].y, scl, scl);
         }
         rect(this.x, this.y, scl, scl)
