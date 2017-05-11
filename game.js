@@ -32,8 +32,8 @@ function draw(){
 
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+function sleep(millis) {
+  return new Promise(resolve => setTimeout(resolve, millis));
 }
 
 async function keyPressed(){
