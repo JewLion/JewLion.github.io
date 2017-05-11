@@ -6,6 +6,7 @@ function Snake(){
     this.total = 0;
     this.tail = [];
     this.rip = false;
+    this.score = 0;
 
     fill(255);
     
@@ -22,6 +23,7 @@ function Snake(){
             if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
                 console.log("End Game!");
                 this.endGame();
+                document.getElementById("endgame").innerHTML = "You Lost";
                 this.rip = true;
             }
         }
@@ -32,6 +34,7 @@ function Snake(){
         if(this.x > rightWall-scl || this.x < leftWall || this.y < topWall || this.y > bottomWall-scl){
             console.log("End Game!");
             this.endGame();
+            document.getElementById("endgame").innerHTML = "You Lost";
             this.rip = true;
         }
 
@@ -54,6 +57,7 @@ function Snake(){
         if (Math.abs(this.x - food.xpos) < scl/4 && Math.abs(this.y - food.ypos) < scl/4){
             //console.log('Yum!');
             this.total++;
+
             return true;
         }
     }
@@ -61,6 +65,7 @@ function Snake(){
     this.endGame = function(){
         noLoop();
         this.total = 0;
+        
         return this.rip;
     }
 
