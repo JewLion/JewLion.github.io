@@ -38,8 +38,6 @@ function reset(){
     }
     
     flappy = new Flappy();
-
-    document.getElementById("score").innerHTML = score;
     
 }
 
