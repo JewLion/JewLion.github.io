@@ -16,36 +16,26 @@ function Pipe(i){
         }
         
         if (flappy.x >= this.x && flappy.x <= this.x + pipeWidth && (flappy.y >= this.yBottom || flappy.y <= this.yTop)){
-            noLoop(); 
-            rip = true;
+            this.end();
         }
         if (dist(this.x, this.yBottom, flappy.x, flappy.y) < r-3){
-            noLoop(); 
-            rip = true;
-            //console.log(dist(this.x + pipeWidth, this.yBottom, flappy.x, flappy.y));
+            this.end();
             
         }
         if (dist(this.x, this.yTop, flappy.x, flappy.y) < r-3){
-            noLoop(); 
-            rip = true;
-            
+            this.end();
         }
         if (dist(this.x + pipeWidth, this.yBottom, flappy.x, flappy.y) < r-3){
-            noLoop(); 
-            rip = true;
-            //console.log("left: " + dist(this.x + pipeWidth, this.yBottom, flappy.x, flappy.y));
+            this.end();
         }
         if (dist(this.x + pipeWidth, this.yTop, flappy.x, flappy.y) < r-3){
-            noLoop(); 
-            rip = true;
+            this.end();
         }
         if (dist(this.x + pipeWidth/2, this.yBottom, flappy.x, flappy.y) < r-3){
-            noLoop(); 
-            rip = true;
+            this.end();
         }
         if (dist(this.x + pipeWidth/2, this.yTop, flappy.x, flappy.y) < r-3){
-            noLoop(); 
-            rip = true;
+            this.end();
         }
 
         if (flappy.x === this.x + pipeWidth / 2) {
@@ -59,6 +49,11 @@ function Pipe(i){
         }
         
     }
-    //console.log("Pipe Created");
+    this.end = function(){
+        noLoop();
+        rip = true;
+        document.getElementById("restart").innerHTML = "You died. Press R to restart";
+    }
+    
 
 }
