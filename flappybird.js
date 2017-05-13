@@ -30,7 +30,7 @@ function reset(){
     r = scl / 2;
     score = 0;
     rip = false;
-
+    document.getElementById("restart").innerHTML = "";
     
 
     for (var i = 0; i <= p; i++){
@@ -38,8 +38,6 @@ function reset(){
     }
     
     flappy = new Flappy();
-
-    document.getElementById("score").innerHTML = score;
     
 }
 
