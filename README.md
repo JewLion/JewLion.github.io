@@ -1,4 +1,7 @@
-## Welcome to GitHub Pages
+## Welcome to jewlion.me created by Julian Hamelberg
+
+[Snake Game](jewlion.me/snakegame)
+[Flappy Bird](jewlion.me/flappybird)
 
 You can use the [editor on GitHub](https://github.com/JewLion/JewLion.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
