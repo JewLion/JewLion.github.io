@@ -1,6 +1,6 @@
 ## Welcome to jewlion.me created by Julian Hamelberg
 
-[Snake Game](http://jewlion.me/snakegame)
+[Snake Game](http://jshjulian.github.io/snakegame)
 
-[Flappy Bird](http://jewlion.me/flappybird)
+[Flappy Bird](http://jshjulian.github.io/flappybird)
 
